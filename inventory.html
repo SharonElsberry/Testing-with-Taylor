@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inventory</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+  
+   <script src="inventoryscript.js"></script>
+    <link rel="stylesheet" href="inventorystyle.css" type="text/css" />
+    
+  <style>
+    div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+  </head>
+  <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#about">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse"  id="nav">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <center><img src="3.jpeg" alt="Los Angeles" style="height:250px;"></center>
+      </div>
+
+      <div class="item">
+        <center><img src="2.jpeg" alt="Chicago" style="height:250px;"></center>
+      </div>
+    
+      <div class="item">
+        <center><img src="1.jpeg" alt="New york" style="height:250px;"></center>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="gallery">
+  <a target="_blank" href="1.jpeg">
+    <img src="1.jpeg" alt="Fancy Silver Car" width="300" height="200">
+  </a>
+  <div class="desc">$25,000</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="2.jpeg">
+    <img src="2.jpeg" alt="Purple Muscle Car" width="600" height="400">
+  </a>
+  <div class="desc">$30,000</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="3.jpeg">
+    <img src="3.jpeg" alt="Snazzy Purple Sports Car" width="600" height="400">
+  </a>
+  <div class="desc">$65,000</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="4.jpeg">
+    <img src="4.jpeg" alt="Blue Bullet" width="600" height="400">
+  </a>
+  <div class="desc">$45,000</div>
+</div>
+<br>
+<br>
+<div>
+<form name="forms" id="forma">
+  <table>
+    <tr>
+      <td>
+        <label>Enter the cost of your New Car:</label>
+        <input type="text" name="txts" size=20>
+        </br>
+        <label>The tax is:</label>
+        <input type="text" name="resul" id="res">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <INPUT TYPE="button" NAME="one" VALUE="  1  " OnClick="forms.txts.value += '1'">
+        <INPUT TYPE="button" NAME="two" VALUE="  2  " OnCLick="forms.txts.value += '2'">
+        <INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="forms.txts.value  += '3'">
+        <INPUT TYPE="button" NAME="plus" VALUE="  +  " OnClick="forms.txts.value += '+ '">
+        <br>
+        <INPUT TYPE="button" NAME="four" VALUE="  4  " OnClick="forms.txts.value += '4'">
+        <INPUT TYPE="button" NAME="five" VALUE="  5  " OnCLick="forms.txts.value += '5'">
+        <INPUT TYPE="button" NAME="six" VALUE="  6  " OnClick="forms.txts.value += '6'">
+
+        <br>
+        <INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="forms.txts.value+= '7'">
+        <INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="forms.txts.value += '8'">
+        <INPUT TYPE="button" NAME="nine" VALUE="  9  " OnClick="forms.txts.value += '9'">
+
+        <br>
+        <INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="forms.txts.value = ''" OnClick="forms.resul.value = ''">
+        <INPUT TYPE="button" NAME="zero" VALUE="  0  " OnClick="forms.txts.value += '0'">
+        <INPUT TYPE="button" NAME="DoIt" VALUE="  =  " OnClick="CalculateIVU();">
+
+        <br>
+        <input type="button" id="input" value="Calculate" onClick='CalculateIVU();'>
+      </td>
+    </tr>
+</table>
+</form>
+    </div>
+</body>
+</html>
